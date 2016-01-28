@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BNWEverydayViewController">
+            <connections>
+                <outlet property="collectionView" destination="LFk-7U-Wg7" id="a9y-pj-eds"/>
+                <outlet property="tableView" destination="UqN-vv-H3s" id="u01-Ma-3f6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pDd-8b-WUe" userLabel="rootView">
+                    <rect key="frame" x="120" y="5" width="480" height="546"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="LFk-7U-Wg7">
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="546"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lFz-QG-41P">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="Lbp-GY-peJ"/>
+                                <outlet property="delegate" destination="-1" id="Ri8-Kh-itR"/>
+                            </connections>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="LFk-7U-Wg7" secondAttribute="trailing" id="5Qw-Jr-xT1"/>
+                        <constraint firstItem="LFk-7U-Wg7" firstAttribute="top" secondItem="pDd-8b-WUe" secondAttribute="top" id="8hH-Bj-slz"/>
+                        <constraint firstItem="LFk-7U-Wg7" firstAttribute="leading" secondItem="pDd-8b-WUe" secondAttribute="leading" id="9Vz-UT-ZUc"/>
+                        <constraint firstAttribute="bottom" secondItem="LFk-7U-Wg7" secondAttribute="bottom" id="eDV-kj-rbr"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="UqN-vv-H3s">
+                    <rect key="frame" x="0.0" y="5" width="120" height="595"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="UBE-Jg-qaL"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="8Wq-Lt-Ozo"/>
+                        <outlet property="delegate" destination="-1" id="41M-M4-Xa0"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VZQ-QX-jO3" userLabel="toolbar">
+                    <rect key="frame" x="0.0" y="551" width="600" height="49"/>
+                    <subviews>
+                        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SbQ-bx-Wx8">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="49"/>
+                            <items/>
+                        </toolbar>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CO9-5d-wet">
+                            <rect key="frame" x="30" y="5" width="180" height="40"/>
+                            <color key="backgroundColor" red="0.98431372549999996" green="0.47843137250000001" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="5a7-SM-etW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="重新选择">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="deSel:" destination="-1" eventType="touchUpInside" id="HQt-KD-oIh"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yck-c8-5jv">
+                            <rect key="frame" x="390" y="5" width="180" height="40"/>
+                            <color key="backgroundColor" red="0.21176470589999999" green="0.63529411759999999" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Ibl-yp-om7"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="确认选择">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="confSel:" destination="-1" eventType="touchUpInside" id="VTP-0g-tV7"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="49" id="DM4-CI-1O5"/>
+                        <constraint firstAttribute="bottom" secondItem="SbQ-bx-Wx8" secondAttribute="bottom" id="F10-c3-Le1"/>
+                        <constraint firstItem="CO9-5d-wet" firstAttribute="width" secondItem="Yck-c8-5jv" secondAttribute="width" id="Mrr-hq-Gqu"/>
+                        <constraint firstItem="CO9-5d-wet" firstAttribute="leading" secondItem="VZQ-QX-jO3" secondAttribute="leading" constant="30" id="RVk-3z-fLA"/>
+                        <constraint firstAttribute="trailing" secondItem="Yck-c8-5jv" secondAttribute="trailing" constant="30" id="WAS-bP-Ltg"/>
+                        <constraint firstItem="CO9-5d-wet" firstAttribute="width" secondItem="SbQ-bx-Wx8" secondAttribute="width" multiplier="0.3" id="brg-fI-oc0"/>
+                        <constraint firstAttribute="trailing" secondItem="SbQ-bx-Wx8" secondAttribute="trailing" id="cpJ-O8-jQ3"/>
+                        <constraint firstItem="SbQ-bx-Wx8" firstAttribute="leading" secondItem="VZQ-QX-jO3" secondAttribute="leading" id="fMb-oa-9rw"/>
+                        <constraint firstItem="SbQ-bx-Wx8" firstAttribute="top" secondItem="VZQ-QX-jO3" secondAttribute="top" id="kXG-ut-gHQ"/>
+                        <constraint firstAttribute="centerY" secondItem="Yck-c8-5jv" secondAttribute="centerY" id="rEC-yB-jVe"/>
+                        <constraint firstAttribute="centerY" secondItem="CO9-5d-wet" secondAttribute="centerY" id="xaH-oT-4PM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647059999998" green="0.90196078430000004" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="VZQ-QX-jO3" secondAttribute="bottom" id="4bJ-Gz-Pyy"/>
+                <constraint firstItem="UqN-vv-H3s" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="5" id="Air-0h-rW7"/>
+                <constraint firstItem="pDd-8b-WUe" firstAttribute="leading" secondItem="UqN-vv-H3s" secondAttribute="trailing" id="C3K-yy-bOS"/>
+                <constraint firstItem="VZQ-QX-jO3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DAz-QB-lhs"/>
+                <constraint firstItem="VZQ-QX-jO3" firstAttribute="top" secondItem="pDd-8b-WUe" secondAttribute="bottom" id="Gld-MO-ILj"/>
+                <constraint firstItem="UqN-vv-H3s" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Glu-qN-qaC"/>
+                <constraint firstAttribute="trailing" secondItem="pDd-8b-WUe" secondAttribute="trailing" id="Nag-lY-aca"/>
+                <constraint firstItem="pDd-8b-WUe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="5" id="UOj-iP-qlK"/>
+                <constraint firstAttribute="bottom" secondItem="UqN-vv-H3s" secondAttribute="bottom" id="wbI-kB-9Lb"/>
+                <constraint firstAttribute="trailing" secondItem="VZQ-QX-jO3" secondAttribute="trailing" id="wpb-sp-p6Y"/>
+            </constraints>
+            <point key="canvasLocation" x="342" y="338"/>
+        </view>
+    </objects>
+</document>

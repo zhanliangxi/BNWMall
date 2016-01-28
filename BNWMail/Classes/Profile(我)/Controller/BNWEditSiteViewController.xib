@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BNWEditSiteViewController">
+            <connections>
+                <outlet property="submitBtn" destination="TH6-nK-8Du" id="IIn-id-ogM"/>
+                <outlet property="tableView" destination="cpf-QH-X7b" id="CT4-uy-pKr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="cpf-QH-X7b">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="jF4-Bz-rds"/>
+                        <outlet property="delegate" destination="-1" id="orb-Y7-OqB"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c0O-Fl-Njw">
+                    <rect key="frame" x="0.0" y="541" width="600" height="49"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TH6-nK-8Du">
+                            <rect key="frame" x="20" y="2" width="560" height="45"/>
+                            <color key="backgroundColor" red="0.94117647059999998" green="0.3921568627" blue="0.050980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="LKd-vU-85k"/>
+                            </constraints>
+                            <state key="normal" title="提交">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="submitClick" destination="-1" eventType="touchUpInside" id="4IG-Fp-WX8"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="TH6-nK-8Du" secondAttribute="trailing" constant="20" id="3Ib-JB-5WO"/>
+                        <constraint firstAttribute="centerY" secondItem="TH6-nK-8Du" secondAttribute="centerY" id="NG0-CR-1hA"/>
+                        <constraint firstAttribute="height" constant="49" id="PeM-hI-LlG"/>
+                        <constraint firstItem="TH6-nK-8Du" firstAttribute="width" secondItem="c0O-Fl-Njw" secondAttribute="width" multiplier="0.8" id="YPz-Eh-Bt6"/>
+                        <constraint firstItem="TH6-nK-8Du" firstAttribute="leading" secondItem="c0O-Fl-Njw" secondAttribute="leading" constant="20" id="aPA-af-YdT"/>
+                        <constraint firstAttribute="centerX" secondItem="TH6-nK-8Du" secondAttribute="centerX" id="yAF-Do-dcA"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="YPz-Eh-Bt6"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="cpf-QH-X7b" secondAttribute="trailing" id="L6t-rn-AFi"/>
+                <constraint firstAttribute="trailing" secondItem="c0O-Fl-Njw" secondAttribute="trailing" id="MUB-a2-NXs"/>
+                <constraint firstAttribute="bottom" secondItem="c0O-Fl-Njw" secondAttribute="bottom" constant="10" id="Ppt-A1-wZf"/>
+                <constraint firstItem="cpf-QH-X7b" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cci-b6-Mz6"/>
+                <constraint firstAttribute="bottom" secondItem="cpf-QH-X7b" secondAttribute="bottom" id="kc0-UY-Eqz"/>
+                <constraint firstItem="cpf-QH-X7b" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pkk-q8-KSu"/>
+                <constraint firstItem="c0O-Fl-Njw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zeD-76-5Yg"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

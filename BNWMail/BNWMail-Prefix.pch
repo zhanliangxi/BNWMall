@@ -1,0 +1,38 @@
+//
+//  BNWMail-Prefix.pch
+//  BNWMail
+//
+//  Created by mac on 15/7/24.
+//  Copyright (c) 2015年 yb. All rights reserved.
+//
+
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+/**
+ *  Category分类
+ */
+#import "UIView+Extension.h"
+#import "UIBarButtonItem+Extension.h"
+#import "UIWindow+Extension.h"
+#import "NSDate+Extension.h"
+#import "UINavigationController+JZExtension.h"
+#import "UIView+AutoLayout.h"
+/**
+ *  宏
+ */
+#import "AppMacros.h"
+#import "BNWMacros.h"
+/**
+ *  通知
+ */
+#import "BNWConst.h"
+
+#endif

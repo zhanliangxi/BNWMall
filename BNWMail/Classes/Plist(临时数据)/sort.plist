@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>icon</key>
+		<string>sort_a</string>
+		<key>title</key>
+		<string>休闲食品</string>
+		<key>desc</key>
+		<string>海苔 休闲冲饮 巧克力 肉铺 糖果...</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>sort_b</string>
+		<key>title</key>
+		<string>生鲜食品</string>
+		<key>desc</key>
+		<string>生鲜蔬菜 精品肉类 新鲜水产 禽蛋...</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>sort_c</string>
+		<key>title</key>
+		<string>新鲜水果</string>
+		<key>desc</key>
+		<string>国产水果 进口水果</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>sort_d</string>
+		<key>title</key>
+		<string>粮油干货</string>
+		<key>desc</key>
+		<string>米面杂粮 食用油 南北干货 腊味...</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>sort_e</string>
+		<key>title</key>
+		<string>调味品</string>
+		<key>desc</key>
+		<string>糖 调味油 料酒 淀粉 盐 煲汤 汤料...</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>sort_f</string>
+		<key>title</key>
+		<string>日用百货</string>
+		<key>desc</key>
+		<string>迷你纸巾 软装抽纸 盒装纸 厨房用纸...</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>sort_g</string>
+		<key>title</key>
+		<string>洗漱用品</string>
+		<key>desc</key>
+		<string>洗发露 洗衣液 洗洁精 消毒水 洗手液..</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>sort_h</string>
+		<key>title</key>
+		<string>酒水饮料</string>
+		<key>desc</key>
+		<string>啤酒 功能饮料 奶制品 果汁饮料...</string>
+	</dict>
+</array>
+</plist>

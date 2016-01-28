@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>rating</key>
+		<string>5</string>
+		<key>name</key>
+		<string>阿道夫</string>
+		<key>reviewDate</key>
+		<string>2015-07-05</string>
+		<key>review</key>
+		<string>好易家澳洲进口牛里脊500g里脊菲力牛肉，新鲜牛肉货品质量不错，完全不像近日报道的僵尸肉。</string>
+		<key>buyDate</key>
+		<string>2015-07-01</string>
+	</dict>
+	<dict>
+		<key>rating</key>
+		<string>2</string>
+		<key>name</key>
+		<string>我是马俊杰</string>
+		<key>reviewDate</key>
+		<string>2015-07-05</string>
+		<key>review</key>
+		<string>好易家澳洲进口牛里脊500g里脊菲力牛肉，新鲜牛肉货品质量不错，完全不像近日报道的僵尸肉。好易家澳洲进口牛里脊500g里脊菲力牛肉，新鲜牛肉货品质量不错，完全不像近日报道的僵尸肉。好易家澳洲进口牛里脊500g里脊菲力牛肉，新鲜牛肉货品质量不错，完全不像近日报道的僵尸肉。好易家澳洲进口牛里脊500g里脊菲力牛肉，新鲜牛肉货品质量不错，完全不像近日报道的僵尸肉。</string>
+		<key>buyDate</key>
+		<string>2015-07-01</string>
+	</dict>
+	<dict>
+		<key>rating</key>
+		<string>3</string>
+		<key>name</key>
+		<string>阿道夫</string>
+		<key>reviewDate</key>
+		<string>2015-07-05</string>
+		<key>review</key>
+		<string>好易家澳洲进口牛里脊500g里脊菲力牛肉，新鲜牛肉货品质量不错，完全不像近日报道的僵尸肉。好易家澳洲进口牛里脊500g里脊菲力牛肉，新鲜牛肉货品质量不错，完全不像近日报道的僵尸肉。好易家澳洲进口牛里脊500g里脊菲力牛肉，新鲜牛肉货品质量不错，完全不像近日报道的僵尸肉。好易家澳洲进口牛里脊500g里脊菲力牛肉，新鲜牛肉货品质量不错，完全不像近日报道的僵尸肉。</string>
+		<key>buyDate</key>
+		<string>2015-07-01</string>
+	</dict>
+	<dict>
+		<key>rating</key>
+		<string>5</string>
+		<key>name</key>
+		<string>阿道夫</string>
+		<key>reviewDate</key>
+		<string>2015-07-05</string>
+		<key>review</key>
+		<string>好易家澳洲进口牛里脊500g里脊菲力牛肉，新鲜牛肉货品质量不错，完全不像近日报道的僵尸肉。</string>
+		<key>buyDate</key>
+		<string>2015-07-01</string>
+	</dict>
+	<dict>
+		<key>rating</key>
+		<string>5</string>
+		<key>name</key>
+		<string>阿道夫</string>
+		<key>reviewDate</key>
+		<string>2015-07-05</string>
+		<key>review</key>
+		<string>好易家澳洲进口牛里脊500g里脊菲力牛肉，新鲜牛肉货品质量不错，完全不像近日报道的僵尸肉。</string>
+		<key>buyDate</key>
+		<string>2015-07-01</string>
+	</dict>
+</array>
+</plist>

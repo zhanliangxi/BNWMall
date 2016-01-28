@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BNWSettingViewController">
+            <connections>
+                <outlet property="logoutBtn" destination="KHi-sF-qY0" id="D52-Fe-thb"/>
+                <outlet property="tableView" destination="O5x-al-UVh" id="uq6-x1-X1n"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="O5x-al-UVh">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="uYr-xL-qp7"/>
+                        <outlet property="delegate" destination="-1" id="4qL-cd-zAi"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pkU-fP-KKH">
+                    <rect key="frame" x="0.0" y="541" width="600" height="49"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHi-sF-qY0">
+                            <rect key="frame" x="20" y="2" width="560" height="45"/>
+                            <color key="backgroundColor" red="0.21176470589999999" green="0.63529411759999999" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="CtF-JM-eu2"/>
+                            </constraints>
+                            <state key="normal" title="退出登录">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="logout" destination="-1" eventType="touchUpInside" id="LTl-Rv-PPu"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="KHi-sF-qY0" secondAttribute="trailing" constant="20" id="4YD-Wp-yfA"/>
+                        <constraint firstItem="KHi-sF-qY0" firstAttribute="leading" secondItem="pkU-fP-KKH" secondAttribute="leading" constant="20" id="FKm-QA-mNy"/>
+                        <constraint firstAttribute="height" constant="49" id="WDq-yS-1fn"/>
+                        <constraint firstAttribute="centerY" secondItem="KHi-sF-qY0" secondAttribute="centerY" id="Yh7-8T-ZAR"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.92549019610000005" green="0.87843137250000003" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="pkU-fP-KKH" secondAttribute="bottom" constant="10" id="EQL-zE-MuZ"/>
+                <constraint firstAttribute="bottom" secondItem="O5x-al-UVh" secondAttribute="bottom" id="Vke-XM-Kwt"/>
+                <constraint firstAttribute="trailing" secondItem="O5x-al-UVh" secondAttribute="trailing" id="W63-cC-Fhl"/>
+                <constraint firstItem="O5x-al-UVh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YgK-wd-SXc"/>
+                <constraint firstAttribute="trailing" secondItem="pkU-fP-KKH" secondAttribute="trailing" id="Z7r-7O-MzF"/>
+                <constraint firstItem="pkU-fP-KKH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="db9-BH-b9r"/>
+                <constraint firstItem="O5x-al-UVh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pjp-4E-pTq"/>
+            </constraints>
+            <point key="canvasLocation" x="466" y="475"/>
+        </view>
+    </objects>
+</document>
